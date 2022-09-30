@@ -1,9 +1,3 @@
--- 自定义图标
-vim.diagnostic.config({
-  virtual_text = true,
-  signs = true,
-  update_in_insert = false,
-})
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
@@ -110,7 +104,12 @@ lspsaga.setup({ -- defaults ...
   diagnostic_message_format = "%m %c",
   highlight_prefix = false,
 })
-
+-- 这里用来设置报错提示，注意该设置会被lspsaga的初始化给覆盖，所以放到lspsaga初始化之后
+vim.diagnostic.config({
+  virtual_text = false, -- 为true表示将报错信息嵌入到文件中
+  signs = true, -- 设置左边的报错符号
+  update_in_insert = false, -- 设置在插入模式下不显示报错信息
+})
 local M = {}
 -- 为 cmp.lua 提供参数格式
 M.formatting = {
