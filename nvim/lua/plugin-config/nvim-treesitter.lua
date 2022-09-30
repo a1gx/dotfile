@@ -24,10 +24,11 @@ treesitter.setup({
       scope_incremental = "<TAB>",
     },
   },
-  -- 启用代码缩进模块 (=)
+  -- 启用代码缩进模块 (在可视模式下使用 = 则可以自动缩进)
+  -- 该功能是个实验功能，会影响编程时的自动缩进，但是经测试在关闭时
+  -- 不仅不会影响程序自动缩进，而且同样可以使用 = 操作符
   indent = {
-    enable = true,
-    disable = {"python"}
+    enable = false, 
   },
 })
 -- 开启 Folding 模块
