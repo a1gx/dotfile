@@ -15,7 +15,7 @@ null_ls.setup({
     formatting.stylua,
     -- python格式化工具，需要使用pip安装 pip install black
     formatting.black.with({ extra_args = { "--fast" } }),
-    -- c/cpp格式化工具
+    -- c/cpp格式化工具，需要安装clang-format
     formatting.clang_format,
     -- Diagnostics  ---------------------
     diagnostics.eslint.with({
