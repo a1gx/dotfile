@@ -27,6 +27,7 @@ treesitter.setup({
   -- 启用代码缩进模块 (=)
   indent = {
     enable = true,
+    disable = {"python"}
   },
 })
 -- 开启 Folding 模块
