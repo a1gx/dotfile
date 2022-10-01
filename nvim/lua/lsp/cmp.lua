@@ -22,6 +22,8 @@ cmp.setup({
       -- require'snippy'.expand_snippet(args.body)
     end,
   },
+  -- 禁用自动选中
+  preselect = cmp.PreselectMode.None,
   -- 来源
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
