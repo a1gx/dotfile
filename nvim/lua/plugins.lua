@@ -51,9 +51,7 @@ packer.startup({
    -- 代码高亮插件
    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
    --------------------- LSP --------------------
-   use({"williamboman/nvim-lsp-installer", })
-   -- Lspconfig
-   use({ "neovim/nvim-lspconfig" })
+   use{"williamboman/mason.nvim","williamboman/mason-lspconfig.nvim","neovim/nvim-lspconfig"}
    -- 补全引擎
    use("hrsh7th/nvim-cmp")
    -- Snippet 引擎
