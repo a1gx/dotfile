@@ -64,7 +64,7 @@ lspsaga.setup({ -- defaults ...
   -- code action title icon
   code_action_icon = " ",
   code_action_prompt = {
-    enable = true,
+    enable = true, -- 关掉这个就可以关掉那个亮的小灯泡
     sign = true,
     sign_priority = 40,
     virtual_text = true,
