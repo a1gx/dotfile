@@ -85,8 +85,8 @@ packer.startup({
    config = {
     -- 设置插件快照路径
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
-    -- 锁定插件版本为v2
-    snapshot = "v3",
+    -- 锁定插件版本为v3
+    -- snapshot = "v3",
     -- 并发数限制
     max_jobs = 16,
     -- 自定义源
