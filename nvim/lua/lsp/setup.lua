@@ -13,7 +13,7 @@ mason.setup({
 })
 -- 对mason_lspconfig进行初始化设置，同时自动安装ensure_installed中的lsp服务
 mason_lspconfig.setup({
-	ensure_installed = { "lua-language-server", "clangd", "pyright" },
+	ensure_installed = { "clangd", "pyright" },
 })
 -- 对lsp服务进行初始化
 mason_lspconfig.setup_handlers({
